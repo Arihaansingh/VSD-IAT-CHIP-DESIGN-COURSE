@@ -25,7 +25,7 @@ run_synthesis
 
 # Screenshots of running the code
 ![unnamed](https://github.com/user-attachments/assets/7f81cca7-d068-4a83-90ce-d554683a54e3)
-![unnamed](https://github.com/user-attachments/assets/94210607-4b2b-4e1a-9285-27293a1091dc)
+![unnamed](https://github.com/user-attachments/assets/f9ec8ebf-fd53-4d47-8cd8-ea9b6f7a1946)
 ![Screenshot from 2025-01-28 21-17-02](https://github.com/user-attachments/assets/3aba1d80-1028-4568-841a-b1f71c10c7b0)
 # Calculating the flop ratio-
 # Formula of Calculating flop ratio-
