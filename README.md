@@ -1,4 +1,21 @@
 # VSD-IAT-CHIP-DESIGN-COURSE
+# Basic Commands -
+prep                                                                                                                          
+ls -ltr                                                                                                                               
+less                                                                                                                             
+cd                                                                                                                                   
+clear                                                                                                                              
+package require                                                                                                                      
+docker                                                                                                                           
+run_synthesis                                                                                                                       
+run_floorplan                                                                                                                       
+run_cts                                                                                                                         
+run_routing                                                                                                                         
+run_magic                                                                                                                            
+run_magic_spice_export                                                                                                              
+run_magic_drc                                                                                                                     
+run_netgen                                                                                                                            
+run_magic_antenna                                                                                                                     
 # Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
 # Now we are going to 
 Run 'Picorv32A'design using openlane                                                                                                
@@ -29,7 +46,8 @@ run_synthesis
 ![Screenshot from 2025-01-28 21-17-02](https://github.com/user-attachments/assets/3aba1d80-1028-4568-841a-b1f71c10c7b0)
 # Calculating the flop ratio-
 # Formula of Calculating flop ratio-
-![image](https://github.com/user-attachments/assets/3aee3a5a-4a7d-409f-a19c-8278472ad199)
+Number of cells/sky 130_fd_sc_hd_dfxtv          
+                                                                                                                                    
 ![0](https://github.com/user-attachments/assets/192065b1-8601-42b2-95c5-f07d283d223e)
 In this you can see the number of cells and Sky130_fd_sc_hd_dfxtp_2
 # Calculation of Flop Ratio and DFF Percentage-
