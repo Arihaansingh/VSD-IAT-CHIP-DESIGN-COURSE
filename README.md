@@ -1,4 +1,4 @@
-# VSD-IAT-CHIP-DESIGN-COURSE
+# DAY 1
 ## Basic Commands -
 prep                                                                                                                          
 ls -ltr                                                                                                                               
