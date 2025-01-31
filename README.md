@@ -1,4 +1,35 @@
-# DAY 1
+# DAY 1: Inception of OpenSource EDA, OpenLANE and SKY130 PDK
+## How to Talk to Computers-
+### Introduction to QFN - 48 package, chip, pads, core, die and IPs
+![image](https://github.com/user-attachments/assets/f02f10d5-ddc0-4ce9-9170-0c6acc989197)
+We all have usually seen boards like this one this is the Arduino, Now here you can see the Yellow encircled part. This is the chip in this course we would be. Knowing more about it. 
+We can also describe the Arduino we saw using a blog diagram-
+![image](https://github.com/user-attachments/assets/48145724-bfe5-45e3-a878-6d4a393ad501)
+A chip-
+![image](https://github.com/user-attachments/assets/288dcc6c-92e4-406c-812c-bb92b3377560)
+
+### Introduction to RISC V
+
+### From Software Applications to Hardware
+
+## SoC Design and OpenLANE-
+### Introduction to Components of Opensource Digital ASIC Design
+
+### Simplified RTL to GDS flow
+
+### Introduction to OpenLANE and Strive Chipsets
+
+### Introduction to OpenLANE detailed ASIC Design Flow
+
+## Get Familiar to Opensource EDA tools-
+### OpenLANE Directory Structure in Detail
+
+### Design Preparation Step
+
+### Review Files After Design Prep and Run Synthesis
+
+### Steps to Characterise Synthesis Results
+
 ## Basic Commands -
 prep                                                                                                                          
 ls -ltr                                                                                                                               
