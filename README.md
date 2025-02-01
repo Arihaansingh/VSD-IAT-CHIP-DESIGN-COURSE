@@ -125,6 +125,85 @@ magic -T sky130A.tech sky130_inv.mag &
 #### Custom inverter in Magic-
 ![unnamed](https://github.com/user-attachments/assets/ac1ed6f0-4bf5-4ea1-8070-6f67792f8b79)
 
+## Converting Inverter of magic in Spice-
+### Commands-
+1 Check current directory-
+pwd
+
+2 Extraction to .ext format-
+extract all
+
+3 Enable the parasitic extraction-
+ext2spice cthresh 0 rthresh 0
+
+4 Converting ext to spice-
+ext2spice
+### Screenshots-
+![unnamed](https://github.com/user-attachments/assets/a1e53713-3a9f-43b6-8f53-2a2f41dbc83e)
+![unnamed](https://github.com/user-attachments/assets/a3656628-a5cc-493e-a193-ac7e4d55682c)
+### Spice extracted by us-
+![unnamed](https://github.com/user-attachments/assets/316ecb3c-f968-450a-807f-cea0829234fa)
+### Edited spice file for simulation-
+![unnamed](https://github.com/user-attachments/assets/542998c7-8982-4683-bfce-ebdd116fd5dd)
+
+## NGSPICE Simulation-
+### Command-
+1 Load spice file for simulation-
+ngspice sky130_inv.spice
+
+2 Simulation
+plot y vs time a
+### Screenshot-
+![unnamed](https://github.com/user-attachments/assets/6a4dbeb6-63ed-4234-8240-3e0fee23f57a)
+![unnamed](https://github.com/user-attachments/assets/c4390daa-d228-4724-bd42-5f89290470c6)
+![unnamed](https://github.com/user-attachments/assets/7937b1a3-2dbf-4f78-be87-3fea65660a05)
+
+## SKY130 PDKs And Steps to Download Labs-
+### Commands
+1 download lab files
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+
+2 extract lab files
+tar xfz drc_tests.tgz
+
+3 Change directory
+cd drc_tests
+
+4 List all files and directories
+ls -al
+
+5  view .magicrc file
+gvim .magicrc
+
+6 Command to open magic tool
+magic -d XR &
+### Screenshots-
+![unnamed](https://github.com/user-attachments/assets/84f8c48a-105b-4b49-b981-fe6d0afcbda7)
+![unnamed](https://github.com/user-attachments/assets/c6f6c4a6-78e6-4e2b-a7bd-9bab126ae55f) 
+![unnamed](https://github.com/user-attachments/assets/90a37903-c3f3-42a0-8368-042baf395f1b)
+#### Inserting the Met3.mag file in Magic-
+![unnamed](https://github.com/user-attachments/assets/6178fa98-d232-478a-9a3f-85c43a619085)
+#### Icorrect Poly.9
+![unnamed](https://github.com/user-attachments/assets/04319352-7ef8-445d-b281-39ed830601e9)
+#### Commands inserted in sky130A.tech file-
+![unnamed](https://github.com/user-attachments/assets/ef683f44-acb6-42be-8d17-cd1beefa3121)
+![unnamed](https://github.com/user-attachments/assets/a4ec1755-3e58-49e2-8af2-8f0f63cd81f7)
+#### Load sky130A.tech-
+![unnamed](https://github.com/user-attachments/assets/78b95f95-580d-45f1-8e0f-bedf652d5190)
+#### Tracks.info-
+![unnamed](https://github.com/user-attachments/assets/6d947820-a98d-4c39-a2ea-208511b5e4c9)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
