@@ -234,6 +234,39 @@ cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/de
 ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
 ### Screenshot-
 ![unnamed](https://github.com/user-attachments/assets/34ad2f0e-6978-483d-a74b-08ff58955f94)
+## Running synthesis-
+### Command-
+1 Change directory-
+cd Desktop/work/tools/openlane_working_dir/openlane
+
+2 Invoke the OpenLANE flow docker-
+docker
+
+3 Invoke the OpenLANE flow in the Interactive mode using the command-
+./flow.tcl -interactive
+
+4 Input the required packages -
+package require openlane 0.9
+
+5 Now the OpenLANE flow is ready to run but before we have to prepare it-
+prep -design picorv32a
+
+6 Adiitional commands to include newly added lef to openlane flow-
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+
+7 Now that the design is prepped and ready, we can run synthesis using following command-
+run_synthesis
+![unnamed](https://github.com/user-attachments/assets/123f16bf-3dfa-42d9-b6cf-496248c44ae2)
+![image](https://github.com/user-attachments/assets/174efb1e-57cb-4287-9b02-7c6ba7ef96ca)
+![unnamed](https://github.com/user-attachments/assets/2091b42f-26b1-4f1f-9a26-7e03d0a70b07)
+![unnamed](https://github.com/user-attachments/assets/65466c82-aebb-472d-80ba-55b660b3f7bb)
+## Running floorplan-
+### Command-
+init_floorplan
+### Screenshot-
+![unnamed](https://github.com/user-attachments/assets/8b5cac2e-326c-42b9-bc01-0674e61f9182)
+
 
 
 
