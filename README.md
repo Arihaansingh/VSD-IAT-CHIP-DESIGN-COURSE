@@ -192,7 +192,48 @@ magic -d XR &
 ![unnamed](https://github.com/user-attachments/assets/78b95f95-580d-45f1-8e0f-bedf652d5190)
 #### Tracks.info-
 ![unnamed](https://github.com/user-attachments/assets/6d947820-a98d-4c39-a2ea-208511b5e4c9)
+## Setting grid-
+### Commands-
+1 syntax for grid command-
+help grid
 
+2 Set values accordingly-
+grid 0.46um 0.34um 0.23um 0.17um
+### Screenshots-
+![unnamed](https://github.com/user-attachments/assets/8b78f424-5004-40a0-a6d1-0527d1ff03fc)
+![unnamed](https://github.com/user-attachments/assets/5da07936-b25a-4d9a-925d-592e71a1be3f)
+## Saving and exporting the file as .lef
+## Saving-
+### Command-
+1 Command to save-
+save sky130_vsdinv.mag
+2 Open custom inverter layout in magic-
+magic -T sky130A.tech sky130_vsdinv.mag &
+### Screenshot-
+![unnamed](https://github.com/user-attachments/assets/d9ed8f05-6594-4ada-afcd-f01986dfeaa0)
+![unnamed](https://github.com/user-attachments/assets/87c57caf-5880-44ac-9c95-2d0fa3070985)
+## Exporting the file as .lef
+### Command-
+1 Converting to .lef-
+lef write
+### Screenshot-
+![unnamed](https://github.com/user-attachments/assets/abb46ccd-4afe-4a76-8419-70c8bf20ad92)
+![unnamed](https://github.com/user-attachments/assets/76a76295-1bc0-49f0-8031-5f0179add951)
+## Copying the newly generated lef and lib files to picorv32a/src/-
+### Commands-
+1 Copying the lef files
+cp sky130_vsdinv.lef ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+
+2 Check whether it's copied
+ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+
+3 Copying lib files
+cp libs/sky130_fd_sc_hd__* ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+
+4 Check whether it's copied
+ls ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/src/
+### Screenshot-
+![unnamed](https://github.com/user-attachments/assets/34ad2f0e-6978-483d-a74b-08ff58955f94)
 
 
 
